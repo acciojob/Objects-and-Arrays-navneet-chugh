@@ -6,12 +6,15 @@ const person = {
 };
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
+// Reference to the 'players' array
 const team = players;
-const team1 = players.slice();
-const cap1 = object.assign({}, person);
-console.log(team);
-console.log(team1);
-console.log(cap1);
+
+// Copy of the 'players' array
+const team1 = [...players];
+
+// Copy of the 'person' object
+const cap1 = { ...person };
+
 
 window.players = players;
 window.person = person;
